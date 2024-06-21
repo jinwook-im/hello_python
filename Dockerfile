@@ -3,7 +3,7 @@
 FROM python:3.9-slim
 
 # Link container image to repo (github packages)
-LABEL org.opencontainers.image.source=https://github.com/jinwook-im/hello-python
+LABEL org.opencontainers.image.source=https://github.com/jinwook-im/hello_python
 
 # Set the working directory
 WORKDIR /app

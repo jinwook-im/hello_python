@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Link container image to repo (github packages)
-LABEL org.opencontainers.image.source=https://github.com/jinwook-im/hello_python
+#LABEL org.opencontainers.image.source=https://github.com/jinwook-im/hello_python
 
 # Expose the port the app runs on
 EXPOSE 5000

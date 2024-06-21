@@ -2,6 +2,9 @@
 # Use the official Python image as a base image
 FROM python:3.9-slim
 
+# Link container image to repo (github packages)
+LABEL org.opencontainers.image.source https://github.com/jinwook-im/hello-python
+
 # Set the working directory
 WORKDIR /app
 

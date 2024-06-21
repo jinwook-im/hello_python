@@ -30,8 +30,7 @@ jobs:
           push: true
           tags: ghcr.io/${{ github.repository }}:latest
           # Link image to repo
-          #labels: |
-          #  org.opencontainers.image.source=https://github.com/${{ github.repository }}
-
+          labels: |
+            org.opencontainers.image.source="https://github.com/${{ github.repository }}"
       - name: Log out from GitHub Container Registry
         run: docker logout ghcr.io

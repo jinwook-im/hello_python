@@ -20,9 +20,9 @@ EXPOSE 5000
 # Add labels
 LABEL org.opencontainers.image.title="my-python-app"
 LABEL org.opencontainers.image.description="This is a Python application."
-LABEL org.opencontainers.image.source="https://github.com/${GITHUB_REPOSITORY}"
-LABEL org.opencontainers.image.url="https://github.com/${GITHUB_REPOSITORY}"
-LABEL org.opencontainers.image.revision="${GITHUB_SHA}"
+LABEL org.opencontainers.image.source="https://github.com/jinwook-im/hello_python"
+LABEL org.opencontainers.image.url="https://github.com/jinwook-im/hello_python"
+#LABEL org.opencontainers.image.revision="${GITHUB_SHA}"
 LABEL org.opencontainers.image.licenses="MIT"
 
 # Command to run the application

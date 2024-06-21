@@ -2,9 +2,6 @@
 # Use the official Python image as a base image
 FROM python:3.9-slim
 
-# Link container image to repo (github packages)
-LABEL org.opencontainers.image.source=https://github.com/jinwook-im/hello_python
-
 # Set the working directory
 WORKDIR /app
 
@@ -16,6 +13,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code
 COPY . .
+
+# Link container image to repo (github packages)
+LABEL org.opencontainers.image.source=https://github.com/jinwook-im/hello_python
 
 # Expose the port the app runs on
 EXPOSE 5000
